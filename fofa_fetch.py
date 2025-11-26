@@ -419,8 +419,8 @@ def third_stage():
 
     try:
         with open(IPTV_FILE, "w", encoding="utf-8") as f:
-            f.write(f"# 更新时间: {beijing_now}（北京时间）\n\n")
-            f.write(f"# 数据来源: https://github.com/kakaxi-1/\n\n")
+            f.write(f"# 更新时间: {beijing_now}（北京时间）\n")
+            f.write(f"# 数据来源: https://github.com/kakaxi-1\n\n")
 
             for category, ch_list in CHANNEL_CATEGORIES.items():
                 f.write(f"{category},#genre#\n")
